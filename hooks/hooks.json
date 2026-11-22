@@ -1,0 +1,11 @@
+{
+  "description": "Session diary: write an entry when a session ends, show the diary when one starts",
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/diary.py\" start", "timeout": 10 } ] }
+    ],
+    "SessionEnd": [
+      { "hooks": [ { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/diary.py\" end", "timeout": 5 } ] }
+    ]
+  }
+}

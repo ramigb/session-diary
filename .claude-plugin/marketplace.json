@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "session-diary",
+  "description": "A session diary so Claude remembers your recent sessions together.",
+  "owner": { "name": "ramigb", "url": "https://github.com/ramigb" },
+  "plugins": [
+    {
+      "name": "session-diary",
+      "description": "Short diary entries after each session, a daily dream into long-term memory, shown at session start.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

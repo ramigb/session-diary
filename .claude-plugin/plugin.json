@@ -1,0 +1,7 @@
+{
+  "name": "session-diary",
+  "version": "0.1.0",
+  "description": "A session diary for Claude: a short entry after each session, a daily 'dream' that folds them into long-term memory, and the notes shown to Claude at the start of the next session.",
+  "author": { "name": "ramigb", "url": "https://github.com/ramigb" },
+  "license": "MIT"
+}
