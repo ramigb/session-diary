@@ -8,6 +8,19 @@ A small diary for Claude Code, so Claude remembers your recent sessions together
 
 It's one Python file, no dependencies. Everything stays as plain text on your disk.
 
+## How it compares
+
+| | Claude's built-in memory (`CLAUDE.md`, auto memory) | Asking Claude to read past sessions | session-diary |
+|---|---|---|---|
+| **When it happens** | Only when Claude (or you) decides a note is worth saving | Only when you remember to ask | Every session, automatically |
+| **What it keeps** | Single facts and rules | Whatever it finds that time | What you did, how it went, decisions, open threads |
+| **Knows what happened last time** | Rarely | Yes, if it finds the right session | Yes, it's shown at every start |
+| **Checked against your words** | No | Reads the raw source | Yes, the daily dream drops claims your own words don't support |
+| **Cost** | Free | Large: transcripts fill your session's context | Small: about $0.001–0.004 per session, about $0.11 per daily dream |
+| **Good for** | Hard rules Claude must always follow | Digging up one exact detail | Continuity: picking up where you left off |
+
+They work best together. Keep hard rules in `CLAUDE.md`. Let the diary carry the story between sessions. When the dream spots something that should become a rule, it suggests it in `suggested-memory.md`, and you decide.
+
 ## Install
 
 In Claude Code:
